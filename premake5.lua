@@ -4,8 +4,8 @@ project "Box2D"
 	cppdialect "C++11"
 	staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir "bin"
+	objdir "obj"
 
 	files
 	{
@@ -31,7 +31,4 @@ project "Box2D"
 		runtime "Release"
 		optimize "on"
 
-	filter "configurations:Dist"
-		runtime "Release"
-		optimize "on"
         symbols "off"
